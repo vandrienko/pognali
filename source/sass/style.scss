@@ -1,0 +1,234 @@
+@import "global.scss";
+// @import "fonts.scss";
+@import "variables.scss";
+
+.page-header {
+  background-color: $basic_blue;
+  color: #fff;
+  // .page-header__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrapper-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 25px;
+  }
+  // .page-header__logo-link
+
+  &__logo-link {
+  }
+
+  // .page-header__toggle
+
+  &__toggle {
+  }
+
+  // .page-header__main-nav
+
+  &__main-nav {
+  }
+
+  // .page-header__contact
+
+  &__contact {
+  }
+}
+.logo-link {
+
+    // .logo-link__logo-image
+
+    &__logo-image {
+    }
+}
+.logo-link--dark {
+}
+.visually-hidden {
+}
+.main-nav {
+
+  // .main-nav__wrapper
+
+  &__wrapper {
+  }
+
+  // .main-nav__list
+
+  &__list {
+  }
+
+  // .main-nav__list--index
+
+  &__list--index {
+  }
+
+  // .main-nav__button
+
+  &__button {
+  }
+}
+.site-list {
+
+  // .site-list__item
+
+  &__item {
+  }
+
+  // .site-list__item--active
+
+  &__item--active {
+  }
+
+  // .site-list__link
+
+  &__link {
+  }
+
+  // .site-list__link--color
+
+  &__link--color {
+  }
+}
+.site-list--closed {
+}
+.contact {
+
+  // .contact__item
+
+  &__item {
+  }
+}
+.social {
+
+  // .social__list
+
+  &__list {
+  }
+
+  // .social__item
+
+  &__item {
+  }
+
+  // .social__link
+
+  &__link {
+  }
+
+  // .social__link--facebook
+
+  &__link--facebook {
+  }
+
+  // .social__icon
+
+  &__icon {
+  }
+
+  // .social__icon--facebook
+
+  &__icon--facebook {
+  }
+
+  // .social__link--vkontakte
+
+  &__link--vkontakte {
+  }
+
+  // .social__icon--vkontakte
+
+  &__icon--vkontakte {
+  }
+
+  // .social__link--insta
+
+  &__link--insta {
+  }
+
+  // .social__icon--insta
+
+  &__icon--insta {
+  }
+}
+.promo {
+
+  // .promo__heading
+
+  &__heading {
+
+  }
+
+  // .promo__contacts-list
+
+
+
+  // .promo__quote-wrapper
+
+  &__quote-wrapper {
+  }
+
+  // .promo__quote
+
+  &__quote {
+  }
+
+  // .promo__quote-author
+
+  &__quote-author {
+  }
+
+  // .promo__instruction-wrapper
+
+  &__instruction-wrapper {
+  }
+
+  // .promo__instruction-list
+
+  &__instruction-list {
+  }
+
+  // .promo__instruction-item
+
+  &__instruction-item {
+  }
+
+  // .promo__instruction-text
+
+  &__instruction-text {
+  }
+}
+
+.contacts-list {
+  &__contacts-list {
+    margin: 0;
+    padding: 0;
+    
+}
+
+&__item {
+  list-style-type: none;
+}
+
+&__link {
+  color: #fff;
+}
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+.heading--h1 {
+  
+}
+
+.promo-contacts {
+
+  // .promo-contacts__item
+
+
+}
