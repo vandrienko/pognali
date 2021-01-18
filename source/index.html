@@ -14,13 +14,15 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo-link logo-link" href="">
-        <img class="logo-link__logo-image logo-link--dark" src="img/logo-mobile-white.svg" alt="Логотип сайта погнали" width="96" height="15">
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="page-header__main-nav main-nav main-nav__wrapper">
+      <div class="page-header__wrapper-link">
+        <a class="page-header__logo-link logo-link" href="">
+          <img class="logo-link__logo-image logo-link--dark" src="img/logo-mobile-white.svg" alt="Логотип сайта погнали" width="96" height="15">
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <div class="page-header__main-nav main-nav main-nav__wrapper visually-hidden">
         <nav class="main-nav">
           <ul class="main-nav__list main-nav__list--index site-list site-list--closed">
             <li class="site-list__item site-list__item--active">
@@ -76,16 +78,16 @@
         <div class="promo__heading">
           <h1 class="heading heading--h1">В путешествие с крутыми попутчиками!</h1>
         </div>
-        <div class="promo__contacts-list">
-          <ul class="contacts-list">
-            <li class="promo-contacts__item">
-              <a href="tel:88005558628" aria-label="наш номер телефона 8800 555-86-28">8800 555-86-28</a>
+        <div class="contacts-list__wrapper">
+          <ul class="promo__contacts-list contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:88005558628" aria-label="наш номер телефона 8800 555-86-28">8800 555-86-28</a>
             </li>
-            <li class="promo-contacts__item">
-              <a href="mailto:mail@htmlacademy.ru" aria-label="наша почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru" aria-label="наша почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
-            <li class="promo-contacts__item">
-              <a class="main-nav__button" href="">Автораизация</a>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" class="main-nav__button" href="">Автораизация</a>
             </li>
           </ul>        
         </div>
