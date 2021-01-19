@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сайт путешествий Погнали</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <!-- SVG-спрайт -->
-  <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-
-  <header class="page-header">
-    <div class="container">
-      <div class="page-header__wrapper">      
-        <div class="page-header__wrapper-link">
-          <a class="page-header__logo-link logo-link" href="">
-            <img class="logo-link__logo-image logo-link--dark" src="img/logo-mobile-white.svg" alt="Логотип сайта погнали" width="96" height="15">
-          </a>
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <div class="page-header__main-nav main-nav main-nav__wrapper visually-hidden">
-          <nav class="main-nav">
-            <ul class="main-nav__list main-nav__list--index site-list site-list--closed">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link site-list__link--color" href="">О сервисе</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--color" href="">Направления</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--color" href="">Попутчики</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="main-nav__button" href="">Автораизация</a>
-          <ul class="page-header__contact">
-            <li class="contact__item">
-              <a href="tel:88005558628" aria-label="наш номер телефона 8800 555-86-28">8800 555-86-28</a>
-            </li>
-            <li class="contact__item">
-              <a href="mailto:mail@htmlacademy.ru" aria-label="наша почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-          <div class="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Фейсбуке</span>
-                  <svg class="social__icon social__icon--facebook" width="11" height="21">
-                    <use xlink:href="#icon-fb-mobile"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                  <svg class="social__icon social__icon--vkontakte" width="23" height="12">
-                    <use xlink:href="#icon-vk-mobile"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy">
-                  <span class="visually-hidden">Мы в инстаграме</span>
-                  <svg class="social__icon social__icon--insta" width="18" height="18">
-                    <use xlink:href="#icon-insta-mobile"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <section class="promo">
-          <div class="promo__heading">
-            <h1 class="heading heading--h1">В путешествие с крутыми попутчиками!</h1>
-          </div>
-          <div class="contacts-list__wrapper">
-            <ul class="promo__contacts-list contacts-list">
-              <li class="contacts-list__item">
-                <a class="contacts-list__link" href="tel:88005558628" aria-label="наш номер телефона 8800 555-86-28">8800 555-86-28</a>
-              </li>
-              <li class="contacts-list__item">
-                <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru" aria-label="наша почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </li>
-              <li class="contacts-list__item">
-                <a class="contacts-list__link" class="main-nav__button" href="">Автораизация</a>
-              </li>
-            </ul>        
-          </div>
-          <div class="promo__quote-wrapper">
-            <blockquotep class="promo__quote">«Лучшее приложение, что я видел в жизни!»</blockquotep>
-            <citep class="promo__quote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</citep>
-          </div>
-          <div class="promo__instruction-wrapper">
-            <ol class="promo__instruction-list">
-              <li class="promo__instruction-item">
-                <p class="promo__instruction-text">Выберите направление</p>
-              </li>
-              <li class="promo__instruction-item">
-                <p class="promo__instruction-text">Изучите идеи путешественников</p>
-              </li>
-              <li class="promo__instruction-item">
-                <p class="promo__instruction-text">Находите тех, кто похож на вас</p>
-              </li>
-              <li class="promo__instruction-item">
-                <p class="promo__instruction-text">Путешествуйте вместе!</p>
-              </li>
-            </ol>
-          </div>
-        </section>
-      </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт путешествий Погнали</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <!-- SVG-спрайт -->
+    <div class="sprite--none">
+      <include src="build/img/sprite.svg"></include>
     </div>
-  </header>
-</body>
+    <header class="page-header">
+      <nav class="page-nav">
+        <div class="container">
+          <div class="page-nav__wrapper">
+            <div class="page-nav__logo-wrapper"> 
+              <a class="logo page-nav__logo" href="">
+                <img class="logo-link__logo-image logo-link--dark" src="img/logo-mobile-white.svg" alt="Логотип сайта погнали" width="96" height="15">
+              </a>
+              <button class="page-nav__toggler" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>      
+            <div class="page-nav__button-wrapper">
+              <a class="button button--circle page-nav__auth-button" href="">Автораизация</a>
+            </div>
+            <div class="page-nav__menu-wrapper">
+              <ul class="page-nav__list">
+                <li class="page-nav__list-item">
+                  <a class="page-nav__list-link" href="">О сервисе</a>
+                </li>
+                <li class="page-nav__list-item">
+                  <a class="page-nav__list-link" href="">Направления</a>
+                </li>
+                <li class="page-nav__list-item">
+                  <a class="page-nav__list-link" href="">Попутчики</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-nav__contacts-wrapper">
+              <ul class="contacts page-nav__contacts">
+                <li class="contact__item">
+                  <a class="contact-url contact-url--telephone" href="tel:88005558628" aria-label="наш номер телефона 8800 555-86-28">8800 555-86-28</a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact-url contact-url--email" href="mailto:mail@htmlacademy.ru" aria-label="наша почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </li>
+              </ul>
+              <ul class="social page-nav__social">
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                    <span class="visually-hidden">Мы в Фейсбуке</span>
+                    <svg class="social__icon social__icon--facebook" width="11" height="21">
+                      <use xlink:href="#icon-fb-mobile"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="visually-hidden">Мы в Вконтакте</span>
+                    <svg class="social__icon social__icon--vkontakte" width="23" height="12">
+                      <use xlink:href="#icon-vk-mobile"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy">
+                    <span class="visually-hidden">Мы в инстаграме</span>
+                    <svg class="social__icon social__icon--insta" width="18" height="18">
+                      <use xlink:href="#icon-insta-mobile"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="promo">
+        <div class="promo__heading">
+          <h1 class="heading heading--h1">В путешествие с крутыми попутчиками!</h1>
+        </div>
+        <div class="contacts-list__wrapper">
+          <ul class="promo__contacts-list contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:88005558628" aria-label="наш номер телефона 8800 555-86-28">8800 555-86-28</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru" aria-label="наша почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" class="main-nav__button" href="">Автораизация</a>
+            </li>
+          </ul>        
+        </div>
+        <div class="promo__quote-wrapper">
+          <blockquotep class="promo__quote">«Лучшее приложение, что я видел в жизни!»</blockquotep>
+          <citep class="promo__quote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</citep>
+        </div>
+        <div class="promo__instruction-wrapper">
+          <ol class="promo__instruction-list">
+            <li class="promo__instruction-item">
+              <p class="promo__instruction-text">Выберите направление</p>
+            </li>
+            <li class="promo__instruction-item">
+              <p class="promo__instruction-text">Изучите идеи путешественников</p>
+            </li>
+            <li class="promo__instruction-item">
+              <p class="promo__instruction-text">Находите тех, кто похож на вас</p>
+            </li>
+            <li class="promo__instruction-item">
+              <p class="promo__instruction-text">Путешествуйте вместе!</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </header>
+    <script src="js/script.js"></script>
+  </body>
 </html>
