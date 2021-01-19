@@ -2,43 +2,65 @@
 // @import "fonts.scss";
 @import "variables.scss";
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 280px;
+.sprite--none {
+  display: none;
+}
+
+.wrapper-link--light {
+  background-color: crimson;
+}
+
+.main-nav {
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .page-header {
   background-color: $basic_blue;
   color: #ffffff;
-  // .page-header__wrapper
+}
+
+.page-nav {
+  // .page-nav__wrapper
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
   }
 
-  &__wrapper-link {
+  // .page-nav__logo-wrapper
+
+  &__logo-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 19px 5px;
   }
-  // .page-header__logo-link
 
-  &__logo-link {
+  // .page-nav__logo
+
+  &__logo {
   }
 
-  // .page-header__toggle
+  // .page-nav__toggler
 
-  &__toggle {
+  &__toggler {
+
     padding: 0;
     width: 25px;
-    height: 25px;
+    height: 18px;
     border: none;
     position: relative;
-    background-color: $basic_blue;
+    background-color: transparent;
 
     &::before,
     &::after {
@@ -54,96 +76,136 @@
     &::before {
       top: 4px;
     }
-  
+
     &::after {
       top: 12px;
     }
-  }
 
-  // .page-header__main-nav
+    &--opened {
+      &::before {
+        top: 7px;
+        left: 0;
+        transform: rotate(45deg);
+      }
 
-  &__main-nav {
-  }
-
-  // .page-header__contact
-
-  &__contact {
-  }
-}
-.logo-link {
-
-    // .logo-link__logo-image
-
-    &__logo-image {
+      &::after {
+        top: 7px;
+        left: 0;
+        transform: rotate(-45deg);
+      }
     }
-}
-.logo-link--dark {
-}
-.visually-hidden {
-}
-.main-nav {
-
-  // .main-nav__wrapper
-
-  &__wrapper {
   }
 
-  // .main-nav__list
+  // .page-nav__button-wrapper
+
+  &__button-wrapper {
+  }
+
+  // .page-nav__auth-button
+
+  &__auth-button {
+  }
+
+  // .page-nav__menu-wrapper
+
+  &__menu-wrapper {
+  }
+
+  // .page-nav__list
 
   &__list {
+    margin: 0;
+    padding: 0;
   }
 
-  // .main-nav__list--index
+  // .page-nav__list-item
 
-  &__list--index {
+  &__list-item {
+    list-style-type: none;
   }
 
-  // .main-nav__button
+  // .page-nav__list-link
 
-  &__button {
+  &__list-link {
+    color: #ffffff;
+  }
+
+  // .page-nav__contacts-wrapper
+
+  &__contacts-wrapper {
+  }
+
+  // .page-nav__contacts
+
+  &__contacts {
+    margin: 0;
+    padding: 0;
+  }
+
+  // .page-nav__social
+
+  &__social {
   }
 }
-.site-list {
 
-  // .site-list__item
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+}
 
-  &__item {
-  }
+.logo {
+}
 
-  // .site-list__item--active
+.logo-link {
 
-  &__item--active {
-  }
+  // .logo-link__logo-image
 
-  // .site-list__link
-
-  &__link {
-  }
-
-  // .site-list__link--color
-
-  &__link--color {
+  &__logo-image {
   }
 }
-.site-list--closed {
+
+.logo-link--dark {
 }
+
+.visually-hidden {
+}
+
+.button {
+}
+
+.button--circle {
+}
+
+.contacts {
+}
+
 .contact {
 
   // .contact__item
 
   &__item {
+    list-style-type: none;
   }
 }
+
+.contact-url {
+}
+
+.contact-url--telephone {
+}
+
+.contact-url--email {
+}
+
 .social {
-
-  // .social__list
-
-  &__list {
-  }
 
   // .social__item
 
   &__item {
+    list-style-type: none;
   }
 
   // .social__link
@@ -186,17 +248,18 @@
   &__icon--insta {
   }
 }
+
 .promo {
 
   // .promo__heading
 
   &__heading {
-
   }
 
   // .promo__contacts-list
 
-
+  &__contacts-list {
+  }
 
   // .promo__quote-wrapper
 
@@ -234,35 +297,26 @@
   }
 }
 
-.contacts-list {
-  &__contacts-list {
-    margin: 0;
-    padding: 0;
-    
-}
-
-&__item {
-  list-style-type: none;
-}
-
-&__link {
-  color: #fff;
-}
-}
-
 .heading {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
 }
+
 .heading--h1 {
-  
 }
 
-.promo-contacts {
+.contacts-list {
 
-  // .promo-contacts__item
+  // .contacts-list__wrapper
 
+  &__wrapper {
+  }
 
+  // .contacts-list__item
+
+  &__item {
+  }
+
+  // .contacts-list__link
+
+  &__link {
+  }
 }
