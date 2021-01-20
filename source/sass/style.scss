@@ -6,8 +6,13 @@
   display: none;
 }
 
-.page-nav--color {
-  background-color: crimson;
+.page-nav--scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: #ffffff;
 }
 
 .main-nav {
@@ -25,7 +30,6 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  height: 4000px;
 }
 
 .page-header {
@@ -100,6 +104,10 @@
     transform: rotate(-45deg);
   }
 
+  .toggler--scroll.page-nav__toggler::before,
+  .toggler--scroll.page-nav__toggler::after {
+    background-color: #cccccc;
+  }
 
   // .page-nav__button-wrapper
 
@@ -169,20 +177,36 @@
   padding-left: 20px;
   padding-right: 20px;
   max-width: 280px;
+  position: relative;
+  z-index: 110;
 }
 
 .logo {
+  position: relative;
+  width: 101px;
+  height: 22px;
 }
 
-.logo-link {
-
-  // .logo-link__logo-image
-
-  &__logo-image {
-  }
+.logo--dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../img/logo-mobile-blue.png);
+  background-color: #ffffff;;
 }
 
-.logo-link--dark {
+.page-nav__logo {
+
+}
+
+.logo-link__logo-image {
 }
 
 .visually-hidden {
