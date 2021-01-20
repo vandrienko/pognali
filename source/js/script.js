@@ -1,34 +1,22 @@
-let navMain = document.querySelector('.main-nav');
-let pageToggle = document.querySelector('.page-header__toggle');
-// console.log(pageToggle);
-// console.log("Hi");
-let wrapperLink = document.querySelector('.page-header__wrapper-link');
+let pageNav = document.querySelector('.page-nav');
+let navToggler = pageNav.querySelector('.page-nav__toggler');
+let pageNavButton = pageNav.querySelector('.page-nav__button-wrapper');
+let pageNavMenu = pageNav.querySelector('.page-nav__menu-wrapper');
+let pageNavContacts = pageNav.querySelector('.page-nav__contacts-wrapper');
 
-pageToggle.addEventListener('click', function() {
-  console.log("Hiss");
-  // navMain.classList.remove('main-nav--closed');
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    pageToggle.classList.add('toggle--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-    pageToggle.classList.remove('toggle--opened');
-  }
+navToggler.addEventListener('click', function() {
+  pageNavButton.classList.toggle('page-nav--opened');
+  pageNavMenu.classList.toggle('page-nav--opened');
+  pageNavContacts.classList.toggle('page-nav--opened');
+  navToggler.classList.toggle('toggler--opened');
 });
 
-// document.addEventListener('scroll', function() {
-//   // document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
-//   wrapperLink.classList.add('wrapper-link--light');
-//   console.log('Скрол сработал');
-// });
 window.onscroll = function() {
   var scrolled = window.pageYOffset;
   if (scrolled > 1){
-    wrapperLink.classList.add('wrapper-link--light');
+    pageNav.classList.add('page-nav--color');
   }
   else {
-    wrapperLink.classList.remove('wrapper-link--light');
+    pageNav.classList.remove('page-nav--color');
   }
-  // console.log( 'Позиция скрола: '+scrolled  );
 };
