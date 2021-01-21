@@ -30,7 +30,6 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  padding-bottom: 4000px;
 }
 
 .page-header {
@@ -305,15 +304,18 @@
 .social {
   margin: 0;
   padding: 0;
-  padding: 40px 0px 10px 0px;
+  padding: 41px 0px 7px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   // .social__item
 
   &__item {
-    padding-right: 10px;
     list-style-type: none;
+
+    &:not(:last-child) {
+      padding-right: 27px;
+    }
   }
 
   // .social__link
@@ -362,11 +364,18 @@
   // .promo__heading
 
   &__heading {
+    margin: 0 auto;
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   // .promo__contacts-list
 
   &__contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
   // .promo__quote-wrapper
@@ -421,10 +430,18 @@
   // .contacts-list__item
 
   &__item {
+    max-width: 189px;
+    min-height: 40px;
   }
 
   // .contacts-list__link
 
   &__link {
+    
+  }
+  .button--promo {
+    max-width: 190px;
+    padding: 5px 0;
   }
 }
+
