@@ -1,0 +1,15 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+  position: relative;
+  z-index: 110;
+}
+.container--promo {
+  background: url("../img/traveller-illustration-mobile.png");
+  background-repeat: no-repeat;
+  background-position:  right 50px top 130px;
+  background-size: 192px 255px;
+}

@@ -1,0 +1,120 @@
+.promo {
+  padding-bottom: 30px;
+  background-image: url("../img/globe-back-mobile1.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 323px 474px;
+  position: relative;
+  z-index: 1;
+  background-color: #161c36;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 386px;
+    bottom: 0;
+    background-color: #161c36;
+    z-index: -1;
+  }
+
+  // .promo__heading
+  &__heading {
+    padding: 0px 10px 0px 10px;
+  }
+
+  // .promo__contacts-list
+  &__contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  // .promo__quote-wrapper
+  &__quote-wrapper {
+    padding: 25px 0px 22px 30px;
+  }
+
+  // .promo__quote
+  &__quote {
+  display: block;
+  padding-bottom: 18px;
+  width: 160px;
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  }
+
+  // .promo__quote-author
+  &__quote-author {
+  display: block;
+  width: 160px;
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  }
+
+  // .promo__instruction-wrapper
+  &__instruction-wrapper {
+  }
+
+  // .promo__instruction-list
+  &__instruction-list {
+    margin: 0;
+    padding: 0;
+    padding: 10px 5px 10px 5px;
+    list-style-type: none;
+  }
+
+  // .promo__instruction-item
+  &__instruction-item {
+    margin-bottom: -15px;
+    padding: 3px 23px 20px 24px;
+    counter-increment: number;
+    background-color: #FF8D30;
+    border-radius: 10px;
+
+    &:nth-child(1) {
+      background-color: #FF8D30;
+    }
+    &:nth-child(2) {
+      background-color: #FFA530;
+    }
+    &:nth-child(3) {
+      background-color: #FFBD30;
+    }
+    &:nth-child(4) {
+      background-color: #FFD74B;
+    }
+  }
+
+  // .promo__instruction-text
+  &__instruction-text {
+    padding: 0px 40px 0px 0px;
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #161C35;
+
+    &::after {
+      content: counter(number);
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 18px;
+      line-height: 18px;
+      color: #f2f2f2;
+      z-index: 1;
+      font-family: Blogger Sans;
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.social {
+  margin: 0;
+  padding: 0;
+  padding: 41px 0px 7px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // .social__item
+  &__item {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      padding-right: 27px;
+    }
+  }
+
+  // .social__link
+  &__link {
+  }
+
+  // .social__link--facebook
+  &__link--facebook {
+  }
+
+  // .social__icon
+  &__icon {
+  }
+
+  // .social__icon--facebook
+  &__icon--facebook {
+  }
+
+  // .social__link--vkontakte
+  &__link--vkontakte {
+  }
+
+  // .social__icon--vkontakte
+  &__icon--vkontakte {
+  }
+
+  // .social__link--insta
+  &__link--insta {
+  }
+
+  // .social__icon--insta
+  &__icon--insta {
+  }
+}

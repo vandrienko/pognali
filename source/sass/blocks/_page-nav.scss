@@ -1,0 +1,147 @@
+.page-nav {
+  //.page-nav--scroll 
+  &--scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: #ffffff;
+  }
+
+  // .page-nav__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  // .page-nav__logo-wrapper
+  &__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 5px;
+  }
+
+  // .page-nav__logo
+  &__logo {
+  }
+
+  // .page-nav__toggler
+  &__toggler {
+    padding: 0;
+    width: 25px;
+    height: 18px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 25px;
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 1.5px;
+    }
+
+    &::before {
+      top: 4px;
+    }
+
+    &::after {
+      top: 12px;
+    }
+  }
+
+  // .toggle--opened
+  .toggler--opened.page-nav__toggler::before {
+    top: 7px;
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  .toggler--opened.page-nav__toggler::after {
+    top: 7px;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+
+  .toggler--scroll.page-nav__toggler::before,
+  .toggler--scroll.page-nav__toggler::after {
+    background-color: #cccccc;
+  }
+
+  // .page-nav__button-wrapper
+  &__button-wrapper {
+    order: 2;
+  }
+
+  // .page-nav__auth-button
+  &__auth-button {
+  }
+
+  // .page-nav__menu-wrapper
+  &__menu-wrapper {
+    padding: 46px 0px 52px 0px;
+    order: 1;
+  }
+
+  // .page-nav__list
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  // .page-nav__list-item
+  &__list-item {
+    list-style-type: none;
+  }
+
+  // .page-nav__list-link
+  &__list-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #192144;
+  }
+
+  //.page-nav__contacts-wrapper
+  &__contacts-wrapper {
+    padding: 49px 0px 30px 0px;
+    order: 3;
+  }
+
+  // .page-nav__contacts
+  &__contacts {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  // .page-nav__social
+  &__social {
+  }
+
+  .page-nav__button-wrapper,
+  .page-nav__menu-wrapper,
+  .page-nav__contacts-wrapper {
+    display: none;
+  }
+
+  .page-nav--opened {
+    display: block;
+  }
+
+  .page-nav__logo {
+  }
+
+  //.page-nav--color
+  &--color {
+    background-color: #ffffff;
+  }
+}

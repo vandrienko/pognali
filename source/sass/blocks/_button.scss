@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  padding: 12px 0px 12px 0px;
+  width: 270px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #FFD74B;
+  color: $basic_blue;
+}
+
+.button--circle {
+  border-radius: 25px;
+}
+
+.button--promo {
+  max-width: 190px;
+  padding: 5px 0;
+}
