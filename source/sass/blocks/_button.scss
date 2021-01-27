@@ -20,3 +20,23 @@
   max-width: 190px;
   padding: 5px 0;
 }
+
+@media (min-width: $tablet) {
+  .page-nav__auth-button {
+    padding: 14px 0;
+    width: 188px;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    /* basic_blue */
+    
+    color: #161C35;
+  }
+}

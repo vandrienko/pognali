@@ -23,6 +23,7 @@
     @media (min-width: $tablet) {
       position: relative;
       z-index: 10;
+      padding: 0px 20px 0px 35px;
     }
   }
 
@@ -33,6 +34,7 @@
     padding: 19px 5px;
 
     @media (min-width: $tablet) {
+    align-items: center;
       width: 50%;
       // display: block;
     }
@@ -95,8 +97,8 @@
 
     @media (min-width: $tablet) {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 15px;
+      right: 40px;
       z-index: 10;
       display: block;
     }

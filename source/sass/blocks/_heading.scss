@@ -6,5 +6,13 @@
 
   &--h1 {
     margin-bottom: 246px;
+    
+  }
+}
+
+@media (min-width: $tablet) {
+  .heading--h1 {
+    font-size: 60px;
+    line-height: 70px;
   }
 }
