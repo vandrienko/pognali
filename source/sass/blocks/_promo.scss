@@ -6,7 +6,20 @@
   background-size: 323px 474px;
   position: relative;
   z-index: 1;
-  background-color: #161c36;
+  // background-color: #182044;
+
+  @media (min-width: $tablet) {
+    // background-color: #182044;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center bottom 130px;
+    background-size: 1479px 612px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/globe-back-tablet@2x.jpg");
+    }
+  }
+
 
   &::before {
     content: "";
@@ -17,6 +30,12 @@
     bottom: 0;
     background-color: #161c36;
     z-index: -1;
+
+    @media (min-width: $tablet) {
+      background-color: transparent;
+    }
+
+
   }
 
   // .promo__heading
@@ -39,18 +58,27 @@
   // .promo__quote-wrapper
   &__quote-wrapper {
     padding: 25px 0px 22px 30px;
+    @media (min-width: $tablet) {
+      padding-left: 70px;
+    }
   }
 
   // .promo__quote
   &__quote {
   display: block;
   padding-bottom: 18px;
-  width: 160px;
+  max-width: 160px;
   font-family: Blogger Sans;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+    @media (min-width: $tablet) {
+    padding-bottom: 45px;
+    max-width: 260px;
+    font-size: 28px;
+    line-height: 33px;
+    }
   }
 
   // .promo__quote-author
@@ -62,6 +90,16 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
+  & br {
+    display: none;
+  }
+  @media (min-width: $tablet) {
+    width: 250px;
+    font-size: 21px;
+    line-height: 25px;
+    & br {
+    display: block;
+    }
   }
 
   // .promo__instruction-wrapper
@@ -120,20 +158,6 @@
       font-family: Blogger Sans;
       font-style: normal;
       font-weight: bold;
-    }
-  }
-}
-
-@media (min-width: $tablet) {
-  .promo {
-    background-image: url("../img/globe-back-tablet@1x.jpg");
-    background-size: cover;
-    background-position: top left -400px;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .promo {
-      background-image: url("../img/globe-back-tablet@2x.jpg");
     }
   }
 }

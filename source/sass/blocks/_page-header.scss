@@ -2,4 +2,8 @@
 .page-header {
   background-color: $basic_blue;
   color: #ffffff;
+
+  @media (min-width: $tablet) {
+    background-color: #182044;
+  }
 }

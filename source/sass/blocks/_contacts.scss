@@ -7,6 +7,9 @@
 
   // .contacts-list__wrapper
   &__wrapper {
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 
   // .contacts-list__item
