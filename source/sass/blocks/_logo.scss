@@ -2,6 +2,11 @@
   position: relative;
   width: 107px;
   height: 23px;
+
+  @media (min-width: $tablet) {
+    width: 166px;
+    height: 42px;
+  }
 }
 
 .logo--dark::after {
@@ -15,9 +20,36 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url(../img/logo-mobile-blue.png);
+  background-image: url(../logo-mobile-blue@1x.png);
   background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    background-image: url(../img/logo-tablet-blue@1x.png);
+  }
 }
 
+// @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//   .logo--dark::after {
+//     background: url("../img/traveller-illustration-mobile@2x.png");
+//   }
+// }
+
 .logo-link__logo-image {
+}
+
+.logo--white {
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3px;
+    z-index: 1;
+    width: 166px;
+    height: 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #161c35;
+    background-image: url(../img/logo-tablet-white.png);
+  }
 }

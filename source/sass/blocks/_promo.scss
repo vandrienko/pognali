@@ -1,6 +1,6 @@
 .promo {
   padding-bottom: 30px;
-  background-image: url("../img/globe-back-mobile1.png");
+  background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 323px 474px;
@@ -22,6 +22,10 @@
   // .promo__heading
   &__heading {
     padding: 0px 10px 0px 10px;
+    @media (min-width: $tablet) {
+      max-width: 370px;
+      margin: 0 auto;
+    }
   }
 
   // .promo__contacts-list
@@ -115,6 +119,20 @@
       font-family: Blogger Sans;
       font-style: normal;
       font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .promo {
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-size: cover;
+    background-position: top left -400px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .promo {
+      background-image: url("../img/globe-back-tablet@2x.jpg");
     }
   }
 }

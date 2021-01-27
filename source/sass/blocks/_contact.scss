@@ -14,7 +14,7 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  color: #192144;
+  color: #192144; 
 
   &::before {
     content: "";
@@ -24,6 +24,7 @@
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 0;
   }
 
   & span {
@@ -34,6 +35,7 @@
 .contact-url--telephone {
   &::before {
     background-image: url('../img/contacts-phone.svg');
+    background-size: 18px 18px;
   }
 }
 
@@ -41,5 +43,6 @@
   text-transform: uppercase;
   &::before {
     background-image: url('../img/contacts-mail.svg');
+    background-size: 18px 16px;
   }
 }
