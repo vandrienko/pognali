@@ -16,6 +16,10 @@
   line-height: 18px;
   color: #192144; 
 
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 28px;
+  }
   &::before {
     content: "";
     width: 45px;
@@ -25,10 +29,19 @@
     background-repeat: no-repeat;
     background-position: center;
     font-size: 0;
+
+    @media (min-width: $tablet) {
+      width: 68px;
+      height: 68px;
+    }
   }
 
   & span {
     padding-left: 20px;
+    @media (min-width: $tablet) {
+      padding-left: 23px;
+    }
+
   }
 }
 
@@ -36,6 +49,10 @@
   &::before {
     background-image: url('../img/contacts-phone.svg');
     background-size: 18px 18px;
+
+    @media (min-width: $tablet) {
+      background-size: 24px 23px;
+    }
   }
 }
 
@@ -44,5 +61,8 @@
   &::before {
     background-image: url('../img/contacts-mail.svg');
     background-size: 18px 16px;
+    @media (min-width: $tablet) {
+      background-size: 28px 19px;
+    }
   }
 }

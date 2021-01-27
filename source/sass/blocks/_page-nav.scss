@@ -21,6 +21,8 @@
     text-align: center;
 
     @media (min-width: $tablet) {
+      align-items: flex-start;
+      text-align: left;
       position: relative;
       z-index: 10;
       padding: 0px 20px 0px 35px;
@@ -112,6 +114,9 @@
   &__menu-wrapper {
     padding: 46px 0px 52px 0px;
     order: 1;
+    @media (min-width: $tablet) {
+      margin: 24px 0px 35px 61px;
+    }
   }
 
   // .page-nav__list
@@ -133,12 +138,20 @@
   line-height: 35px;
   text-transform: uppercase;
   color: #192144;
+    @media (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 71px;
+    }
   }
 
   //.page-nav__contacts-wrapper
   &__contacts-wrapper {
     padding: 49px 0px 30px 0px;
     order: 3;
+
+    @media (min-width: $tablet) {
+      margin: 0px 0px 0px 56px;
+    }
   }
 
   // .page-nav__contacts
@@ -146,6 +159,10 @@
     margin: 0;
     padding: 0;
     text-align: left;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 88px;
+    }
   }
 
   // .page-nav__social
