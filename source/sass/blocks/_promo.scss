@@ -99,12 +99,8 @@
     }
   }
 
-
   // .promo__instruction-wrapper
   &__instruction-wrapper {
-    @media (min-width: $tablet) {
-      // padding: 0px 30px 0px 30px;
-    }
   }
 
   // .promo__instruction-list
@@ -119,12 +115,12 @@
       flex-wrap: wrap;
       justify-content: center;
       padding-top: 0;
-
     }
   }
 
   // .promo__instruction-item
   &__instruction-item {
+    position: relative;
     margin-bottom: -15px;
     padding: 3px 23px 20px 24px;
     counter-increment: number;
@@ -135,71 +131,60 @@
       background-color: #FF8D30;
       @media (min-width: $tablet) {
         border-top-left-radius: 20px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -21px;
+          width: 21px;
+          height: 100%;
+          background-color: #ff8d30;
+        }
       }
     }
+
     &:nth-child(2) {
-      position: relative;
-      z-index: 1;
       background-color: #FFA530;
       @media (min-width: $tablet) {
+        position: relative;
+        z-index: 11;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 35px;
-        height: 140px;
-        background-color: red;
       }
     }
     &:nth-child(3) {
       background-color: #FFBD30;
       @media (min-width: $tablet) {
-        border-bottom-left-radius: 20px;
+        
+        @media (min-width: $tablet) {
+          border-bottom-left-radius: 20px;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -21px;
+            width: 21px;
+            height: 100%;
+            background-color: #FFBD30;
+          }
+        }
       }
     }
     &:nth-child(4) {
       background-color: #FFD74B;
       @media (min-width: $tablet) {
         border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
       }
     }
-    &:nth-child(odd){
-      @media (min-width: $tablet) {
-        // margin-right: -35px;
-        // width: 342px;
-        // padding-right: 18px;
-        // background-color: red;
-      }
-    }
-    &:nth-child(even){
-      @media (min-width: $tablet) {
-        // width: 332px;
-        // margin-left: -18px;
-        // padding-right: 35px;
-        // padding-left: 18px;
-        // background-color: rgb(0, 255, 85);
-      }
-    }
+
     @media (min-width: $tablet) {
-      border-radius: 0;
-      // align-items: center;
       justify-content: center;
       flex-shrink: 0;
       flex-grow: 0;
-      // border-radius: 20px;
-      // margin-right: -35px;
-      // margin-bottom: -20px;
-      
-      margin: 0px 0px 0px 0px;
+      margin: 0;
+      border-radius: 0;
       width: 297px;
-      // padding: 0px 21px 0px 0px;
-      width: 297px;
-
     }
   }
 
