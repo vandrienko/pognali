@@ -12,7 +12,7 @@
     // background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-size: cover;
-    background-position: center bottom 130px;
+    background-position: center bottom 208px;
     background-size: 1479px 612px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -32,10 +32,8 @@
     z-index: -1;
 
     @media (min-width: $tablet) {
-      background-color: transparent;
+      top: 840px;
     }
-
-
   }
 
   // .promo__heading
@@ -59,6 +57,8 @@
   &__quote-wrapper {
     padding: 25px 0px 22px 30px;
     @media (min-width: $tablet) {
+      // margin-bottom: 182px;
+      padding-bottom: 213px;
       padding-left: 70px;
     }
   }
@@ -73,6 +73,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+
     @media (min-width: $tablet) {
     padding-bottom: 45px;
     max-width: 260px;
@@ -90,17 +91,14 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  & br {
-    display: none;
-  }
-  @media (min-width: $tablet) {
-    width: 250px;
-    font-size: 21px;
-    line-height: 25px;
-    & br {
-    display: block;
+
+    @media (min-width: $tablet) {
+      width: 250px;
+      font-size: 21px;
+      line-height: 25px;
     }
   }
+
 
   // .promo__instruction-wrapper
   &__instruction-wrapper {
@@ -112,6 +110,13 @@
     padding: 0;
     padding: 10px 5px 10px 5px;
     list-style-type: none;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 0;
+
+    }
   }
 
   // .promo__instruction-item
@@ -134,17 +139,31 @@
     &:nth-child(4) {
       background-color: #FFD74B;
     }
+
+    @media (min-width: $tablet) {
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin: 0px -15px -15px 0px;
+      width: 315px;
+    }
   }
 
   // .promo__instruction-text
   &__instruction-text {
     padding: 0px 40px 0px 0px;
     position: relative;
+    font-family: Blogger Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
     color: #161C35;
+
+    @media (min-width: $tablet) {
+      padding: 20px 0px 30px 0px;
+      font-size: 24px;
+      line-height: 24px;
+    }
 
     &::after {
       content: counter(number);
@@ -158,6 +177,13 @@
       font-family: Blogger Sans;
       font-style: normal;
       font-weight: bold;
+
+      @media (min-width: $tablet) {
+        left: 0;
+        top: 60px;
+        font-size: 30px;
+        line-height: 30px;
+      }
     }
   }
 }

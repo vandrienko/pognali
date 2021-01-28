@@ -22,9 +22,15 @@
   background-position:  right 50px top 130px;
   background-size: 192px 255px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .container--promo {
-      background: url("../img/traveller-illustration-mobile@2x.png");
-    }
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   .container--promo {
+  //     background: url("../img/traveller-illustration-mobile@2x.png");
+  //   }
+  // }
+
+  @media (min-width: $tablet) {
+    background: url("../img/traveller-illustration-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 151px top 247px;
   }
 }
