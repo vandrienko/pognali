@@ -29,6 +29,11 @@
       z-index: 10;
       padding: 0px 20px 0px 35px;
     }
+    @media (min-width: $tablet) {
+      padding: 0;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   // .page-nav__logo-wrapper
@@ -40,6 +45,12 @@
     @media (min-width: $tablet) {
     align-items: center;
       width: 50%;
+    }
+    @media (min-width: $desktop) {
+      padding: 0;
+      padding-right: 40px;
+      width: auto;
+      order: 1;
     }
   }
 
@@ -74,6 +85,9 @@
     &::after {
       top: 12px;
     }
+    @media (min-width: $desktop) {
+      display: none;
+    }
   }
 
   // .toggle--opened
@@ -105,6 +119,10 @@
       z-index: 10;
       display: block;
     }
+    @media (min-width: $desktop) {
+      position: static;
+      order: 4;
+    }
   }
 
   // .page-nav__auth-button
@@ -118,17 +136,42 @@
     @media (min-width: $tablet) {
       margin: 24px 0px 35px 61px;
     }
+    @media (min-width: $desktop) {
+      margin: 0;
+      padding: 0;
+      display: block;
+      order: 2;
+    }
   }
 
   // .page-nav__list
   &__list {
     margin: 0;
     padding: 0;
+    @media (min-width: $desktop) {
+      display: flex;
+    }
   }
 
   // .page-nav__list-item
   &__list-item {
     list-style-type: none;
+    @media (min-width: $desktop) {
+      margin-right: 34px;
+    }
+    &:first-child {
+      position: relative;
+      padding-left: 105px;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: "";
+        width: 60px;
+        height: 2px;
+        background-color: #ffffff;
+      }
+    }
   }
 
   // .page-nav__list-link
@@ -143,6 +186,11 @@
       font-size: 60px;
       line-height: 71px;
     }
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 20px;
+      color: #ffffff;
+    }
   }
 
   //.page-nav__contacts-wrapper
@@ -152,6 +200,11 @@
 
     @media (min-width: $tablet) {
       margin: 0px 0px 0px 56px;
+    }
+    @media (min-width: $desktop) {
+      margin: 0;
+      padding: 0;
+      margin-left: auto;
     }
   }
 
@@ -163,6 +216,11 @@
 
     @media (min-width: $tablet) {
       margin-bottom: 88px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -188,6 +246,9 @@
 .page-nav__menu-wrapper,
 .page-nav__contacts-wrapper {
   display: none;
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .page-nav__button-wrapper{

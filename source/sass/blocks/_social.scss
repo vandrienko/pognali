@@ -11,6 +11,11 @@
     margin-bottom: 49px;
     justify-content: left;
   }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+
   // .social__item
   &__item {
     list-style-type: none;

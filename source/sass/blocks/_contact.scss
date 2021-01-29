@@ -3,6 +3,9 @@
   &__item {
     padding: 0px 0px 0px 5px;
     list-style-type: none;
+    @media (min-width: $desktop) {
+      padding: 0;
+    }
   }
 }
 
@@ -20,6 +23,13 @@
     font-size: 28px;
     line-height: 28px;
   }
+
+  span {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  } 
+
   &::before {
     content: "";
     width: 45px;
@@ -34,6 +44,11 @@
       width: 68px;
       height: 68px;
     }
+
+    @media (min-width: $desktop) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   & span {
@@ -43,6 +58,7 @@
     }
 
   }
+
 }
 
 .contact-url--telephone {
@@ -52,6 +68,11 @@
 
     @media (min-width: $tablet) {
       background-size: 24px 23px;
+    }
+    @media (min-width: $desktop) {
+      background-color: #FF8D30;
+      background-image: url('../img/topmenu-phone.svg');
+      background-size: 18px 18px;
     }
   }
 }
@@ -63,6 +84,11 @@
     background-size: 18px 16px;
     @media (min-width: $tablet) {
       background-size: 28px 19px;
+    }
+    @media (min-width: $desktop) {
+      background-color: #FFBD30;
+      background-image: url('../img/topmenu-mail.svg');
+      background-size: 16px 14px;
     }
   }
 }
