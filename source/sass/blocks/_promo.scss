@@ -19,7 +19,9 @@
       background-image: url("../img/globe-back-tablet@2x.jpg");
     }
   }
-
+  @media (min-width: $desktop) {
+    margin-bottom: 500px;
+  }
 
   &::before {
     content: "";

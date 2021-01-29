@@ -16,6 +16,11 @@
     padding-top: 25px;
     padding-bottom: 27px;
   }
+  @media (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   // .page-nav__wrapper
   &__wrapper {
     display: flex;

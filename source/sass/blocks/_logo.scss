@@ -7,6 +7,10 @@
     width: 166px;
     height: 42px;
   }
+  @media (min-width: $desktop) {
+    width: 200px;
+    height: 52px;
+  }
 }
 
 .logo--dark::after {
