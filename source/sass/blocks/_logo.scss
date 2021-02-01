@@ -28,6 +28,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
+    background-size: 164px 42px;
     background-image: url(../img/logo-tablet-blue@1x.png);
   }
 }

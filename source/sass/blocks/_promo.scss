@@ -12,7 +12,7 @@
     // background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-size: cover;
-    background-position: center bottom 181px;
+    background-position: center bottom 204px;
     background-size: 1479px 612px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -43,7 +43,8 @@
     padding: 0px 10px 0px 10px;
 
     @media (min-width: $tablet) {
-      max-width: 400px;
+      padding-top: 25px;
+      max-width: 430px;
       margin: 0 auto;
     }
   }
@@ -61,7 +62,7 @@
     @media (min-width: $tablet) {
       // margin-bottom: 182px;
       padding-bottom: 213px;
-      padding-left: 70px;
+      padding-left: 35px;
     }
   }
 
@@ -109,7 +110,7 @@
   &__instruction-list {
     margin: 0;
     padding: 0;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 0px 10px 0px;
     list-style-type: none;
 
     @media (min-width: $tablet) {
@@ -186,7 +187,7 @@
       flex-grow: 0;
       margin: 0;
       border-radius: 0;
-      width: 297px;
+      width: 342px;
     }
   }
 
@@ -202,7 +203,7 @@
     color: #161C35;
 
     @media (min-width: $tablet) {
-      width: 185px;
+      width: 210px;
       padding: 0 12px 21px 9px;
       font-size: 24px;
       line-height: 24px;

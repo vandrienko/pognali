@@ -1,14 +1,10 @@
 .social {
-  margin: 0;
-  padding: 0;
-  padding: 41px 0px 7px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 41px 0px 7px 0px;
 
   @media (min-width: $tablet) {
-    margin-left: 30px;
-    margin-bottom: 49px;
     justify-content: left;
   }
 
