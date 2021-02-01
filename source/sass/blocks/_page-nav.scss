@@ -45,7 +45,7 @@
   &__logo-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 19px 5px;
+    padding: 19px 6px 18px 1px;
 
     @media (min-width: $tablet) {
     align-items: center;
@@ -136,7 +136,7 @@
 
   // .page-nav__menu-wrapper
   &__menu-wrapper {
-    padding: 46px 0px 52px 0px;
+    padding: 55px 0px 52px 0px;
     order: 1;
     @media (min-width: $tablet) {
       margin: 24px 0px 35px 61px;
@@ -160,10 +160,9 @@
 
   // .page-nav__list-item
   &__list-item {
-    list-style-type: none;
-    @media (min-width: $desktop) {
-      margin-right: 34px;
-    }
+  list-style-type: none;
+  @media (min-width: $desktop) {
+    margin-right: 34px;
     &:first-child {
       position: relative;
       padding-left: 105px;
@@ -178,6 +177,7 @@
       }
     }
   }
+}
 
   // .page-nav__list-link
   &__list-link {
