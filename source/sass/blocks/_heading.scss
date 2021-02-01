@@ -6,15 +6,17 @@
 
   &--h1 {
     margin-bottom: 247px;
-    
+
+    @media (min-width: $tablet) {
+      margin: 0;
+      margin-bottom: 64px;
+      font-size: 60px;
+      line-height: 70px; 
+    }
+
+    @media (min-width: $desktop) {
+      text-align: left;
+    }
   }
 }
 
-@media (min-width: $tablet) {
-  .heading--h1 {
-    margin: 0;
-    margin-bottom: 64px;
-    font-size: 60px;
-    line-height: 70px;
-  }
-}
