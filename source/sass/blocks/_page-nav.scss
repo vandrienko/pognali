@@ -11,13 +11,26 @@
     @media (min-width: $tablet) {
       z-index: 10;
     }
+    .page-nav__list-link {
+      @media (min-width: $desktop) {
+        color: #192144;
+      }
+    }
+    .page-nav__list-item:first-child::before {
+      @media (min-width: $desktop) {
+        background-color: #192144;
+      }
+    }
   }
+
+
+
   @media (min-width: $tablet) {
     padding-top: 25px;
     padding-bottom: 27px;
   }
   @media (min-width: $desktop) {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 50px;
   }
 
