@@ -16,7 +16,6 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-  
 }
 
 .container--promo {
@@ -33,9 +32,9 @@
 
   @media (min-width: $desktop) {
     position: relative;
-    z-index: 11555511;
     background: url("../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: right 405px top 0px;
+    padding-bottom: 430px;
   }
 }

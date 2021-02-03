@@ -6,25 +6,18 @@
   background-size: 323px 474px;
   position: relative;
   z-index: 1;
-  // background-color: #182044;
 
   @media (min-width: $tablet) {
-    // background-color: #182044;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-size: cover;
     background-position: center bottom 204px;
     background-size: 1479px 612px;
-
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/globe-back-tablet@2x.jpg");
-    // }
   }
   @media (min-width: $desktop) {
     background-image: url("../img/globe-back-desktop@1x.jpg");
-    background-position: center bottom 109px;
-    background-size: 1440px 559px;
+    background-position: left -30px bottom 0px;
+    background-size: cover;
     margin-top: -40px;
-    // padding-bottom: 125px;
   }
 
   &::before {
@@ -63,12 +56,10 @@
       margin: 0 auto;
     }
     @media (min-width: $desktop) {
-      text-align: left;
-      // display: flex;
       margin: 0;
       padding: 54px 0px 0px 68px;
       max-width: 475px;
-
+      text-align: left;
     }
   }
 
@@ -83,10 +74,10 @@
   &__quote-wrapper {
     padding: 25px 0px 22px 30px;
     @media (min-width: $tablet) {
-      // margin-bottom: 182px;
       padding-bottom: 213px;
       padding-left: 35px;
     }
+
     @media (min-width: $tablet) {
       padding: 67px 25px 0px 0px;
     }
@@ -130,7 +121,12 @@
 
   // .promo__instruction-wrapper
   &__instruction-wrapper {
-    padding-bottom: 100px;
+    @media (min-width: $desktop) {
+      position: relative;
+      z-index: 1;
+      margin-top: -430px;
+      padding-bottom: 95px;
+    }
   }
 
   // .promo__instruction-list
@@ -171,11 +167,11 @@
           background-color: #ff8d30;
         }
       }
-
     }
 
     &:nth-child(2) {
       background-color: #FFA530;
+
       @media (min-width: $tablet) {
         position: relative;
         z-index: 11;
@@ -183,12 +179,14 @@
         border-top-left-radius: 20px;
       }
     }
+
     &:nth-child(3) {
       background-color: #FFBD30;
       @media (min-width: $tablet) {
         
         @media (min-width: $tablet) {
           border-bottom-left-radius: 20px;
+
           &::after {
             content: "";
             position: absolute;
@@ -207,11 +205,9 @@
             }
           }
         }
-        @media (min-width: $desktop) {
-
-        }
       }
     }
+
     &:nth-child(4) {
       background-color: #FFD74B;
       @media (min-width: $tablet) {
@@ -237,14 +233,7 @@
       border-radius: 17px;
       &:not(:last-child) {
         margin-right: -30px;
-        
       }
-      // &:last-child {
-      //   width: 315px;
-      // }
-      // &:first-child {
-      //   width: 345px;
-      // }
     }
   }
 
@@ -265,8 +254,10 @@
       font-size: 24px;
       line-height: 24px;
     }
+
     @media (min-width: $desktop) {
       padding: 0;
+      padding-bottom: 11px;
     }
 
     &::after {
@@ -288,6 +279,7 @@
         font-size: 30px;
         line-height: 30px;
       }
+
       @media (min-width: $desktop) {
         left: 250px;
         top: 0px;
