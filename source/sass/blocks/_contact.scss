@@ -59,6 +59,19 @@
 
   }
 
+  &::after {
+    @media (min-width: $desktop) {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 16px;
+      left: 17px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
 }
 
 .contact-url--telephone {
@@ -69,13 +82,32 @@
     @media (min-width: $tablet) {
       background-size: 24px 23px;
     }
+
     @media (min-width: $desktop) {
       background-color: #FF8D30;
-      background-image: url('../img/topmenu-phone.svg');
-      background-size: 18px 18px;
+      background-image: none;
+    }
+  }
+  &::after {
+    background-color: #FF8D30;
+    background-image: url('../img/topmenu-phone.svg');
+    background-size: 18px 18px;
+  }
+  @media (min-width: $desktop) {
+    &:hover:before,
+    &:focus:before,
+    &:hover:after,
+    &:focus:after {
+      background-color: #F26926;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
+
+
 
 .contact-url--email {
   text-transform: uppercase;
@@ -87,8 +119,27 @@
     }
     @media (min-width: $desktop) {
       background-color: #FFBD30;
-      background-image: url('../img/topmenu-mail.svg');
-      background-size: 16px 14px;
+      // background-image: url('../img/topmenu-mail.svg');
+      // background-size: 16px 14px;
+      background-image: none;
+    }    
+  }
+  &::after {
+    background-color: #FFBD30;
+    background-image: url('../img/topmenu-mail.svg');
+    background-size: 16px 14px;
+  }
+  @media (min-width: $desktop) {
+    &:hover:before,
+    &:focus:before,
+    &:hover:after,
+    &:focus:after {
+      background-color: #FF8D30;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
+
