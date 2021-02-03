@@ -23,8 +23,6 @@
     }
   }
 
-
-
   @media (min-width: $tablet) {
     padding-top: 25px;
     padding-bottom: 27px;
@@ -175,6 +173,7 @@
   &__list-item {
   list-style-type: none;
   @media (min-width: $desktop) {
+    overflow: hidden;
     margin-right: 34px;
     &:first-child {
       position: relative;
@@ -208,6 +207,28 @@
       font-size: 20px;
       line-height: 20px;
       color: #ffffff;
+      & span {
+        position: relative;
+        display: inline-block;
+        transition: transform 0.3s;
+        &::before {
+          position: absolute;
+          overflow: hidden;
+          top: 100%;
+          content: attr(data-hover);
+          transform: translate3d(0,0,0);
+        }
+      }
+
+      &:hover span,
+      &:focus span {
+        display: inline-block;
+        transform: translateY(-100%);
+        color: #FFD74B;
+      }
+      &:active span {
+        opacity: 0.3;
+      }
     }
   }
 
