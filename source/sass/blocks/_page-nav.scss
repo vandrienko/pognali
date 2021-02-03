@@ -143,6 +143,15 @@
 
   // .page-nav__auth-button
   &__auth-button {
+    @media (min-width: $desktop) {
+      &:hover,
+      &:focus {
+        background-color: #FFBD30;
+      }
+      &:active {
+        color: rgba(22,28,54,.3);
+      }
+    }
   }
 
   // .page-nav__menu-wrapper
